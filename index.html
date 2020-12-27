@@ -9,6 +9,30 @@
 
 <body>
   <p>天王盖地虎 小鸡炖蘑菇</p>
+  <script>
+    let arr = [1, 2, 34, 5, 6];
+    let max = Math.max.apply(null, arr);
+    let max1 = Math.max(...arr);
+    console.log(max1);
+
+    function jion(arr, sep) {
+      let str = arr[0];
+      for (let i = 0; i < arr.length; i++) {
+        str = str + sep + arr[i];
+      }
+      return str;
+    }
+    console.log(jion(arr, "!"));
+
+    function strSub(str, start, length) {
+      let str1 = str.substr(start, length);
+      return str1
+    }
+    let str = "岳旭东是我的儿子,赶紧叫爸爸!";
+    console.log(strSub(str, 6, 2));
+
+
+  </script>
 </body>
 
 </html>
